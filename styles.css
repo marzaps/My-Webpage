@@ -396,10 +396,20 @@ body
     gap: 50px;
 }
 
-.sclsHeader
+.sclsHeader1
 {
-    padding-top: 0;
+    padding-top: 100px;
     padding-bottom: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sclsHeader2
+{
     color: white;
     font-weight: 300;
     text-align: center;

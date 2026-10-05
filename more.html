@@ -6,7 +6,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script defer src="script.js"></script>
         <link href="styles.css" rel="stylesheet">
-        <title>My Webpage</title>
+        <title>More about</title>
     </head>
     <body>
         <div id="nav-bar">
@@ -36,72 +36,68 @@
             </nav>
         </div>
 
-        <div class="about py-5">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <img src="me.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-7 column-feat description">
-                        <h1>ABOUT ME</h1>
-                        <p style="font-weight: 200">A little more about me...</p>
-                        <p class="py-3">
-                            HII! I am <span style="font-weight: bolder">Marizza</span>, 19 years old. A Computer Science
-                            student from PUP, a state univesity from the Philippines. I love
-                            <span style="font-weight: bolder">Studio Ghibli</span>, hence the
-                            design of this webpage. I try my best in ways that I know, and I'm still trying to learn more about tech
-                            but more than willing to improve.
-                        </p>
-                        <p>
-                            I aspire to be a web developer someday and my goal for now is to complete the CS50 course.
-                            <span style="font-weight: bolder">I hope you'll love my webpage as much as I loved making it!</span>
-                        </p>
+        <div>
+            <header class="more-header">FAVOURITES</header>
+            <p class="more-desc">
+                A list of all my favourites: movies, hobbies, and what-nots.
+            </p>
+        </div>
 
-                        <div class="progress my-3">
-                            <div class="pro-value1 progress-bar-striped progress-bar-animated">
-                                <p class="d-flex justify-content-between align-items-center w-100 font-weight-bold">
-                                    <span>C</span>
-                                    <span style="color: #95271D">50%</span>
-                                </p>
+        <div class="my-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="container cards-wrapper d-flex gx-5">
+
+                        <div class="col-md-4">
+                            <div class="card h-100 d-flex flex-column shadow-sm">
+                                <img src="music.jpg" class="card-img-top custom-card-img" alt="Music">
+                                <div class="card-body h-100 d-flex flex-column text-center">
+                                    <h1 class="card-title">Music</h1>
+                                    <p class="card-text flex-grow-1">
+                                        My likes in music vary because I find <span style="font-weight: bold">all genres interesting</span>. But lately I've
+                                        been into indie and OPMs.
+                                    </p>
+                                    <button onclick="window.open('https://open.spotify.com/user/s7fiqmvweeazhjd2kgqz2hqu4?si=4e400ae38e9a48bb', '_blank')" class="btn-primary" id="spotiBtn">
+                                        My Spotify
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="progress my-3">
-                            <div class="pro-value2 progress-bar-striped progress-bar-animated">
-                                <p class="d-flex justify-content-between align-items-center w-100">
-                                    <span>HTML / CSS</span>
-                                    <span style="color: #95271D">80%</span></p>
+                        <div class="col-md-4">
+                            <div class="card h-100 d-flex flex-column shadow-sm">
+                                <img src="movies.jpg" class="card-img-top custom-card-img" alt="Movies">
+                                <div class="card-body h-100 d-flex flex-column text-center">
+                                    <h1 class="card-title">Movies</h1>
+                                    <p class="card-text flex-grow-1">
+                                        You might think its studio ghibli movies and you'd be right. BUT I also
+                                        really love <span style="font-weight: bold">RomComs!!!!</span>
+                                    </p>
+                                    <button onclick="window.open('https://letterboxd.com/film/how-to-lose-a-guy-in-10-days/', '_blank')" class="btn-primary" id="movBtn">
+                                        My Fave
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="progress my-3">
-                            <div class="pro-value3 progress-bar-striped progress-bar-animated">
-                                <p class="d-flex justify-content-between align-items-center w-100">
-                                    <span>JAVASCRIPT</span>
-                                    <span style="color: #95271D">40%</span>
-                                </p>
+                         <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="hobbies.jpg" class="card-img-top custom-card-img" alt="Hobbies">
+                                <div class="card-body h-100 d-flex flex-column text-center">
+                                    <h1 class="card-title">Hobbies</h1>
+                                    <p class="card-text flex-grow-1">
+                                        My hobbies are making <span style="font-weight: bold">web designs, playing guitar, reading, and
+                                        sports</span> such as volleyball and badminton!
+                                    </p>
+                                    <button onclick="window.location.href='socials.html'" class="btn-primary" id="nextBtn">
+                                        Next ->
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="progress my-3">
-                            <div class="pro-value4 progress-bar-striped progress-bar-animated">
-                                <p class="d-flex justify-content-between align-items-center w-100">
-                                    <span>BOOTSTRAP</span>
-                                    <span style="color: #95271D">70%</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <button onclick="window.location.href='index.html'" type="button" class="btn1 mt-5 float-right mx-5">
-                            Go Back Home
-                        </button>
-                        <button onclick="window.location.href='more.html'" type="button" class="btn2 mt-5 float-right">
-                            More ->
-                        </button>
 
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     </body>
-</html>
