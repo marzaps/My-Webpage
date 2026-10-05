@@ -1,2 +1,2 @@
 # My-Webpage
-webpage to get to know me
+simple webpage about me
