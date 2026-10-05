@@ -1,0 +1,491 @@
+body
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(chihiro007.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Pixelify Sans', monospace;
+
+    /* font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset; */
+}
+
+.navbar-logo
+{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 991.98px)
+{
+    .navbar
+    {
+        position: relative;
+        padding: 0 20px 20px 20px;
+        text-align: right;
+    }
+
+    .navbar-collapse.navbar-dropdown
+    {
+        position: absolute;
+        top: 50%;
+        z-index: 9999;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.navbar-toggler
+{
+    background-color: #FFE1AF !important;
+    border: 1px;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-toggler:hover
+{
+    background-color: #FFCF71 !important;
+    border: 1px;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.navbar-nav li
+{
+    top: 100%;
+    padding: 0 20px;
+}
+
+.navbar-nav li a
+{
+    color: white !important;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color: #F8E0A4 !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.homepage
+{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.home-text
+{
+    font-size: 5rem;
+    color: #FFCF71;
+    font-weight: bold;
+}
+
+.homepage-desc
+{
+    color: white !important;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.homepage button
+{
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: white !important;
+    background-color: #95271D;
+    transition: 0.2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.homepage button:hover
+{
+    transform: scale(1.1);
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    outline: black;
+}
+
+.more-header
+{
+    color: #FFCF71;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.more-desc
+{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cards-wrapper
+{
+    column-gap: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card
+{
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.card-body
+{
+    background-color: #FFE1AF;
+    text-align: center;
+}
+
+.card-title
+{
+    color: #3B060A;
+    font-weight: bold;
+}
+
+.card-text
+{
+    color: #3B060A;
+    font-weight: 200;
+}
+
+.custom-card-img
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-primary
+{
+    background-color: #95271D;
+    height: 30px;
+    width: 120px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.btn-primary:hover
+{
+    background-color: transparent;
+    color: black !important;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.about h1
+{
+    font-size: 3rem;
+    padding-top: 20px;
+    color: #FFCF71 !important;
+}
+
+.description
+{
+    padding: 20px;
+    color: white;
+}
+
+.about img
+{
+    -webkit-box-shadow: -9px 13px 15px 3px rgba(0,0,0,0.68);
+    box-shadow: -9px 13px 15px 3px rgba(0,0,0,0.68);
+    filter: brightness(70%);
+    border-radius: 20%;
+    transition: 0.2s ease-in-out;
+}
+
+.about img:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.progress
+{
+    background-color: white;
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    -webkit-box-shadow: 0px 0px 4px 0px #000000;
+    box-shadow: 0px 0px 4px 0px #000000;
+}
+
+.progress p
+{
+    color: #95271D;
+    padding-left: 12px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.pro-value1
+{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: #FFCF71;
+    height: 25px;
+    width: 0%;
+}
+
+.pro-value2
+{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: #FFCF71;
+    height: 25px;
+    width: 0%;
+}
+
+.pro-value3
+{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: #FFCF71;
+    height: 25px;
+    width: 0%;
+}
+
+.pro-value4
+{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: #FFCF71;
+    height: 25px;
+    width: 0%;
+}
+
+
+@keyframes load1
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 50%;
+    }
+}
+
+@keyframes load2
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 80%;
+    }
+}
+
+@keyframes load3
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 40%;
+    }
+}
+
+@keyframes load4
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 70%;
+    }
+}
+
+.btn1
+{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #95271D;
+    transition: 0.2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.btn1:hover
+{
+    background-color: transparent;
+    color: white !important;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.btn2
+{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #95271D;
+    transition: 0.2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.btn2:hover
+{
+    background-color: transparent;
+    border: 1px solid black;
+    color: white !important;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.sclsBody
+{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+
+.sclsHeader
+{
+    padding-top: 0;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sclsText
+{
+    font-weight: bold;
+    color: #FFCF71;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.sclsWrapper .sclsBtn
+{
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #95271D;
+    box-shadow: 0px 0px 15px 0px #000000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.sclsWrapper .sclsBtn:hover
+{
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sclsWrapper .sclsBtn .icon
+{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sclsWrapper .sclsBtn:nth-child(1):hover .icon
+{
+    background: #3b5998;
+}
+
+.sclsWrapper .sclsBtn:nth-child(2):hover .icon
+{
+    background: #E1306C;
+}
+
+.sclsWrapper .sclsBtn:nth-child(3):hover .icon
+{
+    background: #24292e;
+}
+
+.sclsWrapper .sclsBtn:nth-child(4):hover .icon
+{
+    background: #0a66c2;
+}
+
+.sclsWrapper .sclsBtn .icon i
+{
+    font-size: 25px;
+    line-height: 55px;
+    align-items: center;
+    padding-left: 19px;
+    padding-top: 4px;
+}
+
+.sclsWrapper .sclsBtn span
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
